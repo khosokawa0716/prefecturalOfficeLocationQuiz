@@ -142,6 +142,7 @@ class Question extends React.Component<{}, QuestionState> {
   render() {
       const start =
         <React.Fragment>
+          <p>{this.state.questionNumber + 1}/{quuestionsLength} 問目</p>
           <p className="question">
             {this.state.prefecture}の県庁所在地は？
           </p>

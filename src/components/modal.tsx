@@ -19,7 +19,7 @@ class Modal extends React.Component<ModalProps> {
           <div
             className="modal"
           >
-            モーダル開いている状態{
+            {
               this.props.isCorrectAnswer ?
               <p>正解です！</p> :
               <p>残念不正解です...</p>
@@ -32,9 +32,7 @@ class Modal extends React.Component<ModalProps> {
             />
           </div>
           :
-          <div>
-            モーダル閉じている状態
-          </div>
+          <div></div>
         }
       </React.Fragment>
     );
