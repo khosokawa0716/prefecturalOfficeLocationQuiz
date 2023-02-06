@@ -52,9 +52,9 @@ const prefectualOfficeLocation = [
   ['鹿児島県（かごしまけん）', '鹿児島市'], // 45
   ['沖縄県（おきなわけん）', '那覇市'], // 46
 ]
-// const questionsLength = prefectualOfficeLocation.length
+const questionsLength = prefectualOfficeLocation.length
 // 問題の数を少なくしてテストする場合に使う
-const questionsLength = 3
+// const questionsLength = 3
 const shuffle = ([...array]) => {
   for (let i = array.length - 1; i >= 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
