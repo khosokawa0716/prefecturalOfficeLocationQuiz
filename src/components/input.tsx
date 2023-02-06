@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
 type InputProps = {
-  inputValue: string;
-  disabled: boolean;
-  onChangeInputValue: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
+  id?: any
+  inputValue: string
+  disabled: boolean
+  onChangeInputValue: (event: React.ChangeEvent<HTMLInputElement>) => void
+}
 
-class Input extends React.Component<InputProps>  {
+class Input extends React.Component<InputProps> {
   handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     this.props.onChangeInputValue(event)
   }
@@ -13,11 +14,12 @@ class Input extends React.Component<InputProps>  {
     return (
       <input
         type="text"
+        id={this.props.id}
         value={this.props.inputValue}
         disabled={this.props.disabled}
         onChange={(event) => this.handleChange(event)}
       />
-    );
+    )
   }
 }
 
