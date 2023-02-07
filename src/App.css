@@ -13,8 +13,12 @@
   margin: 0;
 }
 
+.answer-wrapper {
+  display: flex;
+}
+
 .button-area {
-  margin-top: 20px;
+  margin-left: 20px;
 }
 
 /* modal-component */

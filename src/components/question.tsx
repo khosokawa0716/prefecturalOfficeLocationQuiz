@@ -2,6 +2,8 @@ import React from 'react'
 import Input from './input'
 import Button from './button'
 import Modal from './modal'
+import hazureSound from '../assets/hazure.mp3'
+import atariSound from '../assets/atari.mp3'
 
 const prefectualOfficeLocation = [
   ['北海道（ほっかいどう）', '札幌市'], // 0
@@ -105,11 +107,15 @@ class Question extends React.Component<{}, QuestionState> {
       inputDisabled: true,
     })
     if (inputAnswer === answer) {
+      const aAudio = new Audio(atariSound)
+      aAudio.play()
       this.setState({
         isCorrectAnswer: true,
         countCrrectAnswer: this.state.countCrrectAnswer + 1,
       })
     } else {
+      const hAudio = new Audio(hazureSound)
+      hAudio.play()
       this.setState({
         isCorrectAnswer: false,
       })
@@ -153,20 +159,20 @@ class Question extends React.Component<{}, QuestionState> {
         <p className="question">
           {this.state.prefecture}の県庁所在地（けんちょうそざいち）は？
         </p>
-        <div>
+        <div className="answer-wrapper">
           <Input
             id="input-answer"
             inputValue={this.state.inputValue}
             disabled={this.state.inputDisabled}
             onChangeInputValue={this.handleChangeInputValue}
           />
-        </div>
-        <div className="button-area">
+          <div className="button-area">
           <Button
             title="かいとうする"
             disabled={this.state.buttonDisabled}
             onClick={() => this.handleOpenModal()}
           />
+          </div>
         </div>
         <Modal
           modal={this.state.modal}
