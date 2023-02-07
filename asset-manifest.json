@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/prefecturalOfficeLocationQuiz/static/css/main.158e5c51.css",
-    "main.js": "/prefecturalOfficeLocationQuiz/static/js/main.df0d0a1b.js",
+    "main.css": "/prefecturalOfficeLocationQuiz/static/css/main.31e62e1e.css",
+    "main.js": "/prefecturalOfficeLocationQuiz/static/js/main.da598ba4.js",
     "static/js/787.c7ce32d0.chunk.js": "/prefecturalOfficeLocationQuiz/static/js/787.c7ce32d0.chunk.js",
+    "static/media/atari.mp3": "/prefecturalOfficeLocationQuiz/static/media/atari.ca4124ab65f1f686ddd9.mp3",
+    "static/media/hazure.mp3": "/prefecturalOfficeLocationQuiz/static/media/hazure.ebaa78a4057fce949dfa.mp3",
     "index.html": "/prefecturalOfficeLocationQuiz/index.html",
-    "main.158e5c51.css.map": "/prefecturalOfficeLocationQuiz/static/css/main.158e5c51.css.map",
-    "main.df0d0a1b.js.map": "/prefecturalOfficeLocationQuiz/static/js/main.df0d0a1b.js.map",
+    "main.31e62e1e.css.map": "/prefecturalOfficeLocationQuiz/static/css/main.31e62e1e.css.map",
+    "main.da598ba4.js.map": "/prefecturalOfficeLocationQuiz/static/js/main.da598ba4.js.map",
     "787.c7ce32d0.chunk.js.map": "/prefecturalOfficeLocationQuiz/static/js/787.c7ce32d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.158e5c51.css",
-    "static/js/main.df0d0a1b.js"
+    "static/css/main.31e62e1e.css",
+    "static/js/main.da598ba4.js"
   ]
 }
